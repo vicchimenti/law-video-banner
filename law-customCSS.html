@@ -1,0 +1,21 @@
+/* Start imagebanner Banner <t4 type="meta" meta="content_id" /> */
+
+#id<t4 type="meta" meta="content_id" /> .imageBanner{
+  background-image: url('<t4 type="content" name="Image for Medium-Large Screens" output="imageurl" xhtml="false" />');
+  background-position: <t4 type="content" name="Background horizontal positioning" output="selective-output" modifiers="striptags,htmlentities" format="$value" /> center;
+}
+
+@media screen and (min-width:992px) {
+  #id<t4 type="meta" meta="content_id" /> .imageBanner,
+  #id<t4 type="meta" meta="content_id" /> .imageBannerOverlay{
+    height: <t4 type="content" name="Image height for Medium-Large image" output="normal" modifiers="striptags,htmlentities" />;  
+  }
+}
+@media screen and (min-width:1200px) { 
+  #id<t4 type="meta" meta="content_id" /> .imageBanner,
+  #id<t4 type="meta" meta="content_id" /> .imageBannerOverlay{
+    height: <t4 type="content" name="Image height for Extra Large image" output="normal" modifiers="striptags,htmlentities" />;
+  }
+}
+
+/* End image Banner */
