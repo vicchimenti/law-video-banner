@@ -2,7 +2,9 @@
   /* Start imagebanner Banner <t4 type="meta" meta="content_id" /> */
 
 #id<t4 type="meta" meta="content_id" /> .imageBanner {
-  background-image: url("<t4 type='media' formatter='path/*' id='3383742' />");
+  background-image: url('<t4 type="content" name="Image for Medium-Large Screens" output="imageurl" xhtml="false" />');
+  background-position: <t4 type="content" name="Background horizontal positioning" output="selective-output" modifiers="striptags,htmlentities" format="$value" /> center;
+  
 }
 
 @media screen and (min-width:992px) {
@@ -21,7 +23,7 @@
 /* End image Banner */
 </style>
 
-
-<!-- background-image: url('<t4 type="content" name="Image for Medium-Large Screens" output="imageurl" xhtml="false" />');
+<!-- background-image: url("<t4 type='media' formatter='path/*' id='3383742' />");
+background-image: url('<t4 type="content" name="Image for Medium-Large Screens" output="imageurl" xhtml="false" />');
 background-position: <t4 type="content" name="Background horizontal positioning" output="selective-output" modifiers="striptags,htmlentities" format="$value" /> center; -->
 <!-- <source src="<t4 type='media' formatter='path/*' id='3383742' />" type="video/mp4"> -->
