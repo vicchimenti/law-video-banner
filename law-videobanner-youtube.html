@@ -1,0 +1,24 @@
+<div class="embeddedVideoWrapper bannerVideo ytv autoplay col card text-center border-0 g-0">
+
+    <div class="embeddedVideo">
+        <div class="embeddedVideoInner container-fluid g-0">
+            <t4 type="content" name="Video" output="normal" formatter="video/*" />
+        </div>
+    </div>
+
+    <div class="card-img-overlay">
+        <div class="container standardContent mt-3 pt-3">
+            <div class="d-flex flex-column align-items-center">
+
+                <div class="card-header bg-transparent border-0 m-3 p-3">
+                    <t4 type="content" name="Subtitle" output="selective-output" modifiers="striptags,htmlentities" format="<h2 class=&quot;card-title fs-1&quot;>$value</h2>" />   
+                </div>
+                
+                <div class="card-body">
+                    <t4 type="content" name="Paragraph" output="selective-output" modifiers="medialibrary,nav_sections" format="<div class=&quot;card-text text-white fs-3&quot;>$value</div>" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
